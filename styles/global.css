@@ -1,0 +1,202 @@
+
+body {
+    color: white;
+    background: gray;
+    font-family: 'Poppins', sans-serif;
+}
+
+strong {
+    font-weight: 900;
+}
+
+.cta {
+    border-radius: .4rem;
+    color: black;
+    font-size: .8rem;
+    margin: 1.4rem;
+    padding: .5rem 1rem .5rem 1rem;
+    border: solid #000000 .14rem;
+}
+
+.cta:hover {
+    background-color: black;
+    color: white;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+/* fallbacks */
+
+/* MOBILE VIEW */
+
+/* begin nav styles mobile  */
+
+nav {
+    background-color: white;
+    color: black;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    -webkit-box-shadow: 0px 11px 24px 0px rgba(26,26,26,1);
+-moz-box-shadow: 0px 11px 24px 0px rgba(26,26,26,1);
+box-shadow: 0px 11px 24px 0px rgba(26,26,26,1);
+}
+
+.header-title {
+    color: black;
+    font-family: "Libre Baskerville", serif;
+    font-size: 1.2rem;
+}
+
+/* end nav stlyes mobile */
+
+/**/
+
+/* PARALLAX  */
+
+.parallax-container {
+    margin: auto;
+}
+
+.parallax-container .section {
+    width: 100%;
+}
+
+.parrllax {}
+
+.hero {
+    z-index: -999;
+}
+
+.test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    padding-top: 23.5rem;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: "Libre Baskerville", serif;
+}
+/* begin about me mobile styles*/
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    -webkit-box-shadow: 0px 11px 24px 0px rgba(26,26,26,1);
+-moz-box-shadow: 0px 11px 24px 0px rgba(26,26,26,1);
+box-shadow: 0px 11px 24px 0px rgba(26,26,26,1);
+}
+
+.about-me {
+    padding-top: 2rem;
+    font-size: 2rem;
+    font-family: "Libre Baskerville", serif;
+    min-height: 10vh;
+    color: black;
+
+}
+
+
+
+    .parent-me {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: white;
+        min-height: 50vh;
+        padding-left: 20vh;
+        padding-right: 20vh;
+
+    }
+
+
+.circle-me {
+    color: black;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.more-about-me {
+    color: black;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.bio {
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem;
+    max-width: 24rem;
+}
+
+.resume {
+    padding: 1.6rem 0 2rem 0;
+}
+
+/* end about me mobile styles*/
+/*clymb-logo-section*/
+    .clymb-logo-wrapper{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: #e34d42;
+        height: 25vh;
+        -webkit-box-shadow: 0px 11px 24px 0px rgba(26,26,26,1);
+    -moz-box-shadow: 0px 11px 24px 0px rgba(26,26,26,1);
+    box-shadow: 0px 11px 24px 0px rgba(26,26,26,1);
+    }
+
+
+.clymb-logo {
+        height: 25vh;
+        width: 25vh;
+}
+/*clymb-logo-section*/
+/*clymb-client-section*/
+    .clients-wrapper{
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row nowrap;
+        /*align-items: center;*/
+        background-color: #e34d42;
+        height: 25vh;
+        padding-bottom: 5rem;
+    }
+    .client-tile {
+        height: 20vh;
+        -webkit-box-shadow: 0px 11px 24px 0px rgba(26,26,26,1);
+    -moz-box-shadow: 0px 11px 24px 0px rgba(26,26,26,1);
+    box-shadow: 0px 11px 24px 0px rgba(26,26,26,1);
+    padding: .2rem;
+    }
+
+
+    .client-tile:hover {
+        height: 21vh;
+        -webkit-box-shadow: 0px 11px 24px 0px rgba(26,26,26,1);
+    -moz-box-shadow: 0px 11px 24px 0px rgba(26,26,26,1);
+    box-shadow: 0px 11px 24px 0px rgba(26,26,26,1);
+    padding: .1rem;
+    }
+    /*clymb-client-section*/
