@@ -7,7 +7,10 @@ body {
 strong {
     font-weight: 900;
 }
-
+/*header{
+    width: auto;
+    position: fixed;
+}*/
 .cta {
     border-radius: .4rem;
     color: black;
@@ -39,6 +42,7 @@ hr {
 /* begin nav styles mobile  */
 
 nav {
+    position: fixed;
     background-color: white;
     color: black;
     height: 8vh;
