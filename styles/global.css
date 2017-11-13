@@ -43,18 +43,27 @@ nav {
     color: black;
     height: 8vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     font-family: 'Poppins', sans-serif;
-    -webkit-box-shadow: 0px 11px 24px 0px rgba(26,26,26,1);
--moz-box-shadow: 0px 11px 24px 0px rgba(26,26,26,1);
-box-shadow: 0px 11px 24px 0px rgba(26,26,26,1);
+    -webkit-box-shadow: 0px 11px 24px 0px rgba(26,26,26,.5);
+-moz-box-shadow: 0px 11px 24px 0px rgba(26,26,26,.5);
+box-shadow: 0px 11px 24px 0px rgba(26,26,26,.5);
+}
+
+
+.header-left {
+    padding-left:1rem;
 }
 
 .header-title {
     color: black;
     font-family: "Libre Baskerville", serif;
     font-size: .8rem;
+}
+
+.header-right {
+        padding-right:1rem;
 }
 
 /* end nav stlyes mobile */
@@ -99,9 +108,9 @@ h2 {
     justify-content: center;
     align-items: center;
     background-color: white;
-    -webkit-box-shadow: 0px 11px 24px 0px rgba(26,26,26,1);
--moz-box-shadow: 0px 11px 24px 0px rgba(26,26,26,1);
-box-shadow: 0px 11px 24px 0px rgba(26,26,26,1);
+    -webkit-box-shadow: 0px 11px 24px 0px rgba(26,26,26,.5);
+-moz-box-shadow: 0px 11px 24px 0px rgba(26,26,26,.5);
+box-shadow: 0px 11px 24px 0px rgba(26,26,26,.5);
 }
 
 .about-me {
@@ -154,6 +163,30 @@ box-shadow: 0px 11px 24px 0px rgba(26,26,26,1);
 }
 
 /* end about me mobile styles*/
+
+/*EXP*/
+
+.exp{
+display: flex;
+justify-content: center;
+background-color: white;
+align-items: center;
+color: black;
+height: 15vh;
+-webkit-box-shadow: 0px 11px 24px 0px rgba(26,26,26,.5);
+-moz-box-shadow: 0px 11px 24px 0px rgba(26,26,26,.5);
+box-shadow: 0px 11px 24px 0px rgba(26,26,26,.5);
+
+}
+
+h6 {
+    padding-top:2rem;
+padding-bottom:2rem;
+font-size: 2rem;
+}
+
+
+
 /*clymb-logo-section*/
     .clymb-logo-wrapper{
         display: flex;
@@ -162,9 +195,9 @@ box-shadow: 0px 11px 24px 0px rgba(26,26,26,1);
         align-items: center;
         background-color: #e34d42;
         height: 50vh;
-        -webkit-box-shadow: 0px 11px 24px 0px rgba(26,26,26,1);
-    -moz-box-shadow: 0px 11px 24px 0px rgba(26,26,26,1);
-    box-shadow: 0px 11px 24px 0px rgba(26,26,26,1);
+        -webkit-box-shadow: 0px 11px 24px 0px rgba(26,26,26,.5);
+    -moz-box-shadow: 0px 11px 24px 0px rgba(26,26,26,.5);
+    box-shadow: 0px 11px 24px 0px rgba(26,26,26,.5);
     }
 
 
@@ -195,9 +228,9 @@ grid-gap:2%;
     }
     .client-tile {
         height: 20vh;
-        -webkit-box-shadow: 0px 11px 24px 0px rgba(26,26,26,1);
-    -moz-box-shadow: 0px 11px 24px 0px rgba(26,26,26,1);
-    box-shadow: 0px 11px 24px 0px rgba(26,26,26,1);
+        -webkit-box-shadow: 0px 11px 24px 0px rgba(26,26,26,.5);
+    -moz-box-shadow: 0px 11px 24px 0px rgba(26,26,26,.5);
+    box-shadow: 0px 11px 24px 0px rgba(26,26,26,.5);
     padding: .2rem;
           background-color: #e34d42;
 
