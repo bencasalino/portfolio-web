@@ -51,6 +51,16 @@ nav {
 box-shadow: 0px 11px 24px 0px rgba(26,26,26,.5);
 }
 
+.fold {
+    text-align: center;
+        background-color: white;
+        height: 20vh;
+}
+.arrow {
+    color:black;
+
+
+}
 
 .header-left {
     padding-left:1rem;
@@ -95,7 +105,7 @@ box-shadow: 0px 11px 24px 0px rgba(26,26,26,.5);
 }
 
 h1 {
-    padding-top: 23.5rem;
+    padding-top: 26.5rem;
     font-size: 3rem;
 }
 
@@ -108,9 +118,7 @@ h2 {
     justify-content: center;
     align-items: center;
     background-color: white;
-    -webkit-box-shadow: 0px 11px 24px 0px rgba(26,26,26,.5);
--moz-box-shadow: 0px 11px 24px 0px rgba(26,26,26,.5);
-box-shadow: 0px 11px 24px 0px rgba(26,26,26,.5);
+height: 20vh;
 }
 
 .about-me {
