@@ -1,33 +1,39 @@
 // font-family: 'Libre Baskerville', serif;
 // font-family: 'Lato', sans-serif;
 // font-family: 'Oswald', sans-serif;
-// font-family: 'Hind Madurai', sans-serif;
+// DEFAULTS
+$wht: #fff;
+$blk: #000;
+$gray: #D7DADB; //CLYMB COLORS
+$clymb-red: #e34d42; //MULT COLORS
+// QA COLORS
 
 body {
-    color: white;
-    // font-family: 'Hind Madurai', sans-serif;
-    background-color: #D7DADB;
+    color: $wht;
+    font-family: 'Lato', sans-serif;
+    background-color: $gray;
 }
 
 strong {
     font-weight: 900;
 }
-/*header{
-    width: auto;
-    position: fixed;
-}*/
+
+
+
 .cta {
     border-radius: 0.4rem;
-    color: black;
+    color: $blk;
     font-size: 0.8rem;
     margin: 1.4rem;
     padding: 0.5rem 1rem;
     border: solid #000000 0.14rem;
+    font-family: 'Lato', sans-serif;
 }
 
 .cta:hover {
-    background-color: black;
-    color: white;
+    background-color: $blk;
+    color: $wht;
+    font-family: 'Lato', sans-serif;
 }
 
 hr {
@@ -41,8 +47,8 @@ hr {
 /* begin nav styles mobile  */
 nav {
     position: fixed;
-    background-color: white;
-    color: black;
+    background-color: $wht;
+    color: $blk;
     height: 8vh;
     display: flex;
     justify-content: space-between;
@@ -51,16 +57,17 @@ nav {
     -webkit-box-shadow: 0 11px 24px 0 rgba(26, 26, 26, .5);
     -moz-box-shadow: 0 11px 24px 0 rgba(26, 26, 26, .5);
     box-shadow: 0 11px 24px 0 rgba(26, 26, 26, .5);
+    z-index: 9999;
 }
 
 .fold {
     text-align: center;
-    background-color: white;
+    background-color: $wht;
     height: 20vh;
 }
 
 .arrow {
-    color: black;
+    color: $blk;
 }
 
 .header-left {
@@ -74,9 +81,9 @@ nav {
 .header-name {
     font-size: 1.6rem;
     font-family: 'Lato', sans-serif;
-    color: black;
+    color: $blk;
     font-weight: 900;
-    padding-left: .5rem;
+    padding-left: 0.5rem;
 }
 
 .header-right {
@@ -95,22 +102,22 @@ nav {
 
 .parrllax {}
 
-.hero {
+.hero ,{
     z-index: -999;
 }
 
-.p1-cont {
-        padding-top:10rem;
+.container-lax-hero {
+    padding-top: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-
-.hmm {
-    z-index: 99999
+.states {
+    // z-index: -99999;
 }
+
 h1 {
     // padding-top: 10.5rem;
     font-size: 3rem;
@@ -121,50 +128,45 @@ h3 {
     font-family: "Libre Baskerville", serif;
 }
 /* begin about me mobile styles*/
-.parent {
+.container-about-me {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: $wht;
     height: 20vh;
 }
 
-.about-me {
+.item-about-me {
     padding-top: 2rem;
     font-size: 2rem;
     font-family: "Libre Baskerville", serif;
     min-height: 10vh;
-    color: black;
+    color: $blk;
 }
 
-.parent-me {
+.container-circle-image {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: white;
+    background-color: $wht;
     min-height: 50vh;
     padding-left: 20vh;
     padding-right: 20vh;
 }
 
 .circle-me {
-    color: black;
-}
-
-.circle {
     border-radius: 50%;
 }
 
-.more-about-me {
-    color: black;
+.container-bio-states {
+    color: $blk;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
 }
 
-.bio {
-    font-family: 'Poppins', sans-serif;
+.item-bio {
     padding: 1rem;
     max-width: 24rem;
 }
@@ -174,12 +176,12 @@ h3 {
 }
 /* end about me mobile styles*/
 /*EXP*/
-.exp {
+.header-exp {
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color: $wht;
     align-items: center;
-    color: black;
+    color: $blk;
     height: 15vh;
     -webkit-box-shadow: 0 11px 24px 0 rgba(26, 26, 26, .5);
     -moz-box-shadow: 0 11px 24px 0 rgba(26, 26, 26, .5);
@@ -192,12 +194,12 @@ h6 {
     font-size: 2rem;
 }
 /*clymb-logo-section*/
-.clymb-logo-wrapper {
+.contianer-logo-clymb {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: #e34d42;
+    background-color: $clymb-red;
     height: 50vh;
     -webkit-box-shadow: 0 11px 24px 0 rgba(26, 26, 26, .5);
     -moz-box-shadow: 0 11px 24px 0 rgba(26, 26, 26, .5);
@@ -243,26 +245,15 @@ margin-left: 10vh;*/
     -moz-box-shadow: 0 11px 24px 0 rgba(26, 26, 26, .5);
     box-shadow: 0 11px 24px 0 rgba(26, 26, 26, .5);
     padding: 0.2rem;
-    background-color: #e34d42;
+    background-color: $clymb-red;
 }
-/*
-        .client-tile:hover {
-            height: 21vh;
-            -webkit-box-shadow: 0px 11px 24px 0px rgba(26,26,26,1);
-        -moz-box-shadow: 0px 11px 24px 0px rgba(26,26,26,1);
-        box-shadow: 0px 11px 24px 0px rgba(26,26,26,1);
-        padding: .1rem;
-        }*/
-/*clymb-client-section*/
+
 .tripple-wrapper {
-    /*text-align: center;*/
-    /*margin-top: 6vh;
-        margin-bottom: 10vh;*/
+
     justify-content: center;
     display: grid;
-    /*grid-gap:2%;*/
     grid-template-columns: repeat(3, 33.3%);
-    background-color: #e34d42;
+    background-color: $clymb-red;
     padding: 1rem;
 }
 
@@ -275,19 +266,20 @@ margin-left: 10vh;*/
 }
 
 .three {
-    //
-    // -webkit-box-shadow: 0px 11px 24px 0px rgba(26, 26, 26, .5);
-    // -moz-box-shadow: 0px 11px 24px 0px rgba(26, 26, 26, .5);
-    // box-shadow: 0px 11px 24px 0px rgba(26, 26, 26, .5);
+
 }
 
+
+.about {
+font-size: 2rem;
+}
 .group,
 .tandc {
     -webkit-box-shadow: 0 11px 24px 0 rgba(26, 26, 26, .5);
     -moz-box-shadow: 0 11px 24px 0 rgba(26, 26, 26, .5);
     box-shadow: 0 11px 24px 0 rgba(26, 26, 26, .5);
     padding: 0.2rem;
-    background-color: #e34d42;
+    background-color: $clymb-red;
 }
 
 .tech {
@@ -299,7 +291,7 @@ margin-left: 10vh;*/
     // margin-top :15vh;
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color: $wht;
 }
 
 .qa-image,
@@ -310,13 +302,16 @@ margin-left: 10vh;*/
 .qa-about {
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color: $wht;
     padding: 1rem 1rem 5rem;
+    // align-content: center;
+    min-width: 80vw;
 }
 
 .qa-item {
+    // max-width: 10rem;
     padding: 3rem;
-    color: black;
+    color: $blk;
 }
 
 .mult-back {
