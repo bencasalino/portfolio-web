@@ -2,13 +2,17 @@
 // font-family: 'Lato', sans-serif;
 // font-family: 'Oswald', sans-serif;
 // DEFAULTS
+
 $wht: #fff;
 $blk: #000;
 $gray: #D7DADB; //CLYMB COLORS
 $clymb-red: #e34d42; //MULT COLORS
+// $dgray: #101010;
+
 // QA COLORS
 
 body {
+    color: #109245;
     color: $wht;
     font-family: 'Lato', sans-serif;
     background-color: $gray;
@@ -18,6 +22,14 @@ strong {
     font-weight: 900;
 }
 
+.header-right {
+    a {
+            color: $blk;
+            font-size: 1.2rem;
+            padding-left: .2rem;
+            padding-right: .2rem;
+    }
+}
 
 
 .cta {
@@ -26,7 +38,7 @@ strong {
     font-size: 0.8rem;
     margin: 1.4rem;
     padding: 0.5rem 1rem;
-    border: solid #000000 0.14rem;
+    border: solid $blk 0.14rem;
     font-family: 'Lato', sans-serif;
 }
 
@@ -42,9 +54,7 @@ hr {
     border-style: inset;
     border-width: 1px;
 }
-/* fallbacks */
-/* MOBILE VIEW */
-/* begin nav styles mobile  */
+
 nav {
     position: fixed;
     background-color: $wht;
@@ -60,10 +70,10 @@ nav {
     z-index: 9999;
 }
 
-.fold {
+.section-fold {
     text-align: center;
     background-color: $wht;
-    height: 20vh;
+    height: 25vh;
 }
 
 .arrow {
@@ -88,6 +98,7 @@ nav {
 
 .header-right {
     padding-right: 1rem;
+        color: $blk;
 }
 /* end nav stlyes mobile */
 /**/
@@ -115,7 +126,7 @@ nav {
 }
 
 .states {
-    // z-index: -99999;
+    z-index: -99999;
 }
 
 h1 {
@@ -153,6 +164,7 @@ h3 {
     min-height: 50vh;
     padding-left: 20vh;
     padding-right: 20vh;
+    padding-bottom: 20vh;
 }
 
 .circle-me {
@@ -226,7 +238,7 @@ margin-left: 10vh;*/
     /*grid-auto-rows: minmax(100px, auto);*/
 }
 
-.cont {
+.container-clients {
     /*width: 100vw;*/
     display: grid;
     /*grid-gap: 10px;*/
@@ -239,7 +251,7 @@ margin-left: 10vh;*/
     padding: 5rem 0;
 }
 
-.client-tile {
+.item-client-tile {
     height: 20vh;
     -webkit-box-shadow: 0 11px 24px 0 rgba(26, 26, 26, .5);
     -moz-box-shadow: 0 11px 24px 0 rgba(26, 26, 26, .5);
@@ -248,7 +260,7 @@ margin-left: 10vh;*/
     background-color: $clymb-red;
 }
 
-.tripple-wrapper {
+.container-clymb{
 
     justify-content: center;
     display: grid;
@@ -257,15 +269,15 @@ margin-left: 10vh;*/
     padding: 1rem;
 }
 
-.one,
-.two {
+.item-left,
+.item-center {
     font-size: 1rem;
     padding: 1.5rem;
     letter-spacing: 0.1rem;
     line-height: 1.2rem;
 }
 
-.three {
+.item-right {
 
 }
 
@@ -282,12 +294,12 @@ font-size: 2rem;
     background-color: $clymb-red;
 }
 
-.tech {
+.clymb-tech-title {
     font-size: 1.5rem;
     text-align: center;
 }
 
-.qa-wrapper {
+.container-qa{
     // margin-top :15vh;
     display: flex;
     justify-content: center;
@@ -299,7 +311,7 @@ font-size: 2rem;
     padding: 1rem;
 }
 
-.qa-about {
+.container-qa-about {
     display: flex;
     justify-content: center;
     background-color: $wht;
@@ -308,21 +320,62 @@ font-size: 2rem;
     min-width: 80vw;
 }
 
-.qa-item {
+.item-qa {
     // max-width: 10rem;
     padding: 3rem;
     color: $blk;
 }
 
-.mult-back {
+.item-mult-background {
     -webkit-box-shadow: 0 11px 24px 0 rgba(26, 26, 26, .5);
     -moz-box-shadow: 0 11px 24px 0 rgba(26, 26, 26, .5);
     box-shadow: 0 11px 24px 0 rgba(26, 26, 26, .5);
-    position: relative;
-    z-index: 1;
 }
 
-.bridgeapp {
-    position: absolute;
-    z-index: 9999;
+
+.container-mult-title {
+        background-color: #208ecf;
+}
+
+
+
+
+.container-mult-hero {
+    display: flex;
+    justify-content: center;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    background-color: #208ecf;
+}
+.about-mult, .mov, .item-phone {
+flex: 3;
+
+// width: 33.3%;
+}
+
+.phone {
+    justify-content: center;
+
+}
+.mov {
+    margin-top: 5vh;
+
+}
+.about-mult {
+    // color: #101010;
+    color:$wht;
+        margin-top: 3vh;
+    padding: 1rem;
+    letter-spacing: .15px;
+}
+
+
+
+.hmm {
+    padding:  .2rem;
+    background-color: $wht;
+    border-radius: .2rem;
+    -webkit-box-shadow: 0 11px 24px 0 rgba(26, 26, 26, .5);
+    -moz-box-shadow: 0 11px 24px 0 rgba(26, 26, 26, .5);
+    box-shadow: 0 11px 24px 0 rgba(26, 26, 26, .5);
 }
